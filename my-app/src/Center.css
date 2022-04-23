@@ -1,0 +1,15 @@
+.Dad{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+.index{
+    color: blue;
+    border-radius: 2px black;
+    width: 30%;
+}
+.CS{
+    color: greenyellow;
+    border-radius: 2px black;
+    width: 70%;
+}
