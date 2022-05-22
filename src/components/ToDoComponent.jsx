@@ -1,11 +1,12 @@
 import React from "react";
+import TodoInput from "./TodoInput";
 
+const TodoComponent = () => {
+  return (
+    <div>
+      <h1>Todo Component</h1>
+    </div>
+  );
+};
 
-const ToDoComponent = () =>{
-   
-    return (
-       <div>
-        </div>
-    )
-}
-export default ToDoComponent;
+export default TodoComponent;
