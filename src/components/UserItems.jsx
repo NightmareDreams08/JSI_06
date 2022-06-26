@@ -1,19 +1,20 @@
 import React from "react";
-import{User,Card,Text} from "@nextui-org/react";
+import { Link } from "react-router-dom";
+import { Card, User, Text } from "@nextui-org/react";
 
+const UserItem = (props) => {
+  const data = props.userData;
 
-const UserItems =(props) => {
-    console.log(props)
-return(
+  return (
     <Card shadow>
-<User 
-src= {props.src}
-name={props.name}
-/>
-<Text h4 color="primary">
-    {props.text}
-</Text>
+      <Link to={`/users/${props.userData.id}`}>
+        <User src={data.avatar} name={`${data.first_name} ${data.last_name}`} />
+        <Text h4 color="primary">
+          {data.email}
+        </Text>
+      </Link>
     </Card>
-)
-}
-export default UserItems
+  );
+};
+
+export default UserItem;
